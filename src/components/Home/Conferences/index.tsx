@@ -21,18 +21,17 @@ const Conferences = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              <h2>Best Online and Offline Conferences</h2>
-              <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80 max-w-506 md:pt-9 pt-5 md:pb-14 pb-6">
-                Sometimes by accident, sometimes chunks as necessary making this
-                the first true generator on the Internet. recently with desktop
-                publishing software like Aldus PageMaker
-              </p>
-              <Link
-                href="/"
-                className="btn_outline btn-2 hover-outline-slide-down"
-              >
-                <span>Upcoming conferences</span>
-              </Link>
+             <h2>Découvrez Nos Projets</h2>
+             <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80 max-w-506 md:pt-9 pt-5 md:pb-14 pb-6">
+               Explorez nos réalisations majeures dans les secteurs de l’Oil & Gas, des énergies renouvelables, de l’hydraulique et de la maintenance industrielle. Chaque projet reflète notre expertise et notre engagement envers l’excellence.
+             </p>
+             <Link
+               href="/projets"
+               className="btn_outline btn-2 hover-outline-slide-down"
+             >
+               <span>Voir tous les projets</span>
+             </Link>
+
             </div>
           </div>
         </div>

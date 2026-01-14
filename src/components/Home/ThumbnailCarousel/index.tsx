@@ -92,7 +92,7 @@ const ThumbnailCarousel: React.FC = () => {
                 <Slider {...settingsFor} ref={mainSliderRef} className="pb-3">
                     <div>
                         <Image
-                            src="/images/ThumbnailSlider/Slider_1.png"
+                            src="/images/ThumbnailSlider/1.jpg"
                             alt="Conference"
                             width={0}
                             height={0}
@@ -104,7 +104,19 @@ const ThumbnailCarousel: React.FC = () => {
                     </div>
                     <div>
                         <Image
-                            src="/images/ThumbnailSlider/Slider_2.jpg"
+                            src="/images/ThumbnailSlider/2.jpg"
+                            alt="Conference"
+                            width={0}
+                            height={0}
+                            quality={100}
+                            layout="responsive"
+                            sizes="100vh"
+                            className="rounded-lg"
+                        />
+                    </div>
+                     <div>
+                        <Image
+                            src="/images/ThumbnailSlider/3.png"
                             alt="Conference"
                             width={0}
                             height={0}
@@ -116,7 +128,19 @@ const ThumbnailCarousel: React.FC = () => {
                     </div>
                     <div>
                         <Image
-                            src="/images/ThumbnailSlider/Slider_3.png"
+                            src="/images/ThumbnailSlider/4.jpg"
+                            alt="Conference"
+                            width={0}
+                            height={0}
+                            quality={100}
+                            layout="responsive"
+                            sizes="100vh"
+                            className="rounded-lg"
+                        />
+                    </div>
+                      <div>
+                        <Image
+                            src="/images/ThumbnailSlider/5.jpg"
                             alt="Conference"
                             width={0}
                             height={0}
@@ -128,7 +152,7 @@ const ThumbnailCarousel: React.FC = () => {
                     </div>
                     <div>
                         <Image
-                            src="/images/ThumbnailSlider/Slider_4.jpg"
+                            src="/images/ThumbnailSlider/6.jpg"
                             alt="Conference"
                             width={0}
                             height={0}
@@ -138,12 +162,25 @@ const ThumbnailCarousel: React.FC = () => {
                             className="rounded-lg"
                         />
                     </div>
+                    <div>
+                        <Image
+                            src="/images/ThumbnailSlider/7.jpg"
+                            alt="Conference"
+                            width={0}
+                            height={0}
+                            quality={100}
+                            layout="responsive"
+                            sizes="100vh"
+                            className="rounded-lg"
+                        />
+                    </div>
+                  
                 </Slider>
                 <Slider {...settingsNav} ref={navSliderRef} className="thumb">
                     <div>
                         <Image
-                            src="/images/ThumbnailSlider/Slider_1.png"
-                            alt="Thumbnail"
+                            src="/images/ThumbnailSlider/1.jpg"
+                            alt="1"
                             width={0}
                             height={0}
                             quality={100}
@@ -154,8 +191,8 @@ const ThumbnailCarousel: React.FC = () => {
                     </div>
                     <div>
                         <Image
-                            src="/images/ThumbnailSlider/Slider_2.jpg"
-                            alt="Thumbnail"
+                            src="/images/ThumbnailSlider/2.jpg"
+                            alt="2"
                             width={0}
                             height={0}
                             quality={100}
@@ -166,8 +203,8 @@ const ThumbnailCarousel: React.FC = () => {
                     </div>
                     <div>
                         <Image
-                            src="/images/ThumbnailSlider/Slider_3.png"
-                            alt="Thumbnail"
+                            src="/images/ThumbnailSlider/3.png"
+                            alt="Conference"
                             width={0}
                             height={0}
                             quality={100}
@@ -178,8 +215,44 @@ const ThumbnailCarousel: React.FC = () => {
                     </div>
                     <div>
                         <Image
-                            src="/images/ThumbnailSlider/Slider_4.jpg"
-                            alt="Thumbnail"
+                            src="/images/ThumbnailSlider/4.jpg"
+                            alt="3"
+                            width={0}
+                            height={0}
+                            quality={100}
+                            layout="responsive"
+                            sizes="100vh"
+                            className="rounded-lg"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src="/images/ThumbnailSlider/5.jpg"
+                            alt="Conference"
+                            width={0}
+                            height={0}
+                            quality={100}
+                            layout="responsive"
+                            sizes="100vh"
+                            className="rounded-lg"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src="/images/ThumbnailSlider/6.jpg"
+                            alt="Conference"
+                            width={0}
+                            height={0}
+                            quality={100}
+                            layout="responsive"
+                            sizes="100vh"
+                            className="rounded-lg"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src="/images/ThumbnailSlider/7.jpg"
+                            alt="Conference"
                             width={0}
                             height={0}
                             quality={100}

@@ -15,7 +15,7 @@ const Upcoming = () => {
               <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <BoxSlider />
               </div>
-              <div>
+              {/*<div>
                 <div className="flex items-center flex-wrap w-full border border-solid  dark:border-dark_border md:px-14 px-6 md:mt-14 mt-6 rounded-22">
                   {conferences.slice(0, 2).map((conference, index) => (
                     <div
@@ -68,7 +68,7 @@ const Upcoming = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

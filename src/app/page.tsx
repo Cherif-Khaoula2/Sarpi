@@ -19,9 +19,10 @@ export default function Home() {
       <ThumbnailCarousel/>
       <WorkSpeakers/>
       <EventTicket/>
+      {/*<Highlight/>*/}
       <Upcoming/>
       <Testimonials/>
-      <TicketSection/>
+      {/*<TicketSection/>*/}
     </main>
   )
 }
