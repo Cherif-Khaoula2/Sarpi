@@ -17,8 +17,8 @@ const page = () => {
   return (
     <>
       <HeroSub
-        title="Contact Us"
-        description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
+        title="Contactez-nous"
+        description="Pour toute information, demande de renseignement ou collaboration, n’hésitez pas à nous contacter. Notre équipe est à votre écoute."
         breadcrumbLinks={breadcrumbLinks}
       />
       <ContactInfo />

@@ -74,10 +74,10 @@ const ContactForm = () => {
                         </div>
                         <div className="col-span-6">
                             <Image
-                                src="/images/contact-page/contact.jpg"
-                                alt="Contact"
-                                width={1300}
-                                height={0}
+                                src="/images/contact-page/contacter.jpg"
+                                alt="Contacter"
+                                width={1500}
+                                height={1000}
                                 quality={100}
                                 style={{ width: '100%', height: 'auto' }}
                                 className="bg-no-repeat bg-contain rounded-lg"

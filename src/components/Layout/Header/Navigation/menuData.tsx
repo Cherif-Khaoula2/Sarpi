@@ -1,17 +1,17 @@
 import { HeaderItem } from "@/types/menu";
 
 export const headerData: HeaderItem[] = [
-  { label: "Homepage", href: "/" },
-  { label: "Schedules", href: "/schedules" },
-  { label: "Speakers", href: "/speakers" },
+  { label: "Accueil", href: "/" },
+  { label: "A propos de nous", href: "/schedules" },
+  { label: "Nos Métiers", href: "/speakers" },
   {
-    label: "Blog",
+    label: "Nos projets",
     href: "/blog",
     submenu: [
-      { label: "Blog list", href: "/blog" },
-      { label: "Blog details", href: "/blog/blog_1" },
+      { label: "Projets Réalisés", href: "/blog" },
+      { label: "Projets en Cours de Réalisation", href: "/blog/blog_1" },
     ],
   },
   { label: "Contact", href: "/contact" },
-  { label: "Documentation", href: "/documentation" },
+  { label: "Actualités", href: "/documentation" },
 ];  
