@@ -1,40 +1,41 @@
 export const speakers = [
     {
         id: 1,
-        src: "/images/world-class-speakers/speakers_1.png",
+        src: "/images/world-class-speakers/1.jpg",
         alt: "work class speakers",
-        name: "Darrell Steward",
-        designation: "Designation",
+        name: "Oil & Gas",
+        designation: "Nous intervenons sur l’ensemble de la chaîne Oil & Gas, de la production au traitement, en garantissant des solutions fiables, sécurisées et conformes aux normes en vigueur.",
     },
     {
         id: 2,
-        src: "/images/world-class-speakers/speakers_2.png",
+        src: "/images/world-class-speakers/2.jpg",
         alt: "work class speakers",
-        name: "Darrell Steward",
-        designation: "Designation",
+        name: "Énergies classiques",
+        designation: "Nous accompagnons les projets de centrales électriques et thermiques en assurant la performance, la continuité et la sécurité des installations.",
     },
     {
         id: 3,
-        src: "/images/world-class-speakers/speakers_3.png",
+        src: "/images/world-class-speakers/3.jpg",
         alt: "work class speakers",
-        name: "Darrell Steward",
-        designation: "Designation",
+        name: "Énergies renouvelables",
+        designation: "Nous développons et intégrons des solutions durables dans le domaine des énergies renouvelables, notamment les installations solaires et photovoltaïques.",
     },
     {
         id: 4,
-        src: "/images/world-class-speakers/speakers_4.png",
+        src: "/images/world-class-speakers/4.jpg",
         alt: "work class speakers",
-        name: "Darrell Steward",
-        designation: "Designation",
+        name: "Hydraulique",
+        designation: "Nous réalisons des projets hydrauliques couvrant le traitement, le transport et le stockage de l’eau, avec un fort engagement qualité et environnemental.",
     },
     {
         id: 5,
-        src: "/images/world-class-speakers/speakers_5.png",
+        src: "/images/world-class-speakers/5.jpg",
         alt: "work class speakers",
-        name: "Darrell Steward",
-        designation: "Designation",
+        name: "Maintenance industrielle",
+        designation: "Nous assurons la maintenance industrielle afin d’optimiser la disponibilité des équipements et prolonger la durée de vie des installations.",
     },
 ];
+
 
 export const conferences = [
     {
