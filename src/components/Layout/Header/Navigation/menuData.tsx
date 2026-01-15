@@ -4,12 +4,12 @@ export const headerData: HeaderItem[] = [
   { label: "Accueil", href: "/" },
   {
     label: "Entreprise & Valeurs",
-    href: "/blog",
+    href: "",
     submenu: [
-      { label: "Mot du PDG", href: "/blog" },
-      { label: "Notre organisation", href: "/blog/blog_1" },
-      { label: "Système HSE", href: "/blog/blog_1" },
-      { label: "Nos valeurs", href: "/blog/blog_1" },
+      { label: "Mot du PDG", href: "/motpdg" },
+      { label: "Notre organisation", href: "/QuiSommesNous" },
+      { label: "Système HSE", href: "/SystemeHSE" },
+      { label: "Nos valeurs", href: "" },
     ],
   },
   { label: "Nos Métiers", href: "/speakers" },

@@ -256,6 +256,20 @@ export const PackageStructure = () => {
                                                                                     </div>
 
                                                                                 </li>
+                                                                                <li className="py-2">
+
+                                                                                    <div className="flex items-center gap-3">
+                                                                                        <p className="text-xl text-SlateBlueText dark:text-opacity-80" >|—</p>
+                                                                                        <span className="font-medium text-SlateBlueText dark:text-opacity-80">
+                                                                                            <Icon
+                                                                                                icon="tabler:folder"
+                                                                                                className="text-primary text-base inline-block me-2"
+                                                                                            />
+                                                                                            motpdg
+                                                                                        </span>
+                                                                                    </div>
+
+                                                                                </li>
                                                                             </ul>
                                                                         </div>
                                                                     </li>
