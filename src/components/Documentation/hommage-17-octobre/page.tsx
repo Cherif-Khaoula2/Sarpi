@@ -26,7 +26,11 @@ export default function Hommage17OctobrePage() {
                         <div className="flex items-center gap-4 text-sm">
                             <div className="flex items-center gap-2">
                                 <Icon icon="mdi:calendar-outline" className="text-xl" />
-                                <span>17 Octobre 2023</span>
+                                <span> Octobre 2021</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Icon icon="mdi:map-marker" className="text-xl" />
+                                <span>Oran, Algérie</span>
                             </div>
                         </div>
                     </div>
@@ -43,123 +47,35 @@ export default function Hommage17OctobrePage() {
                         </h2>
                         
                         <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Le 17 octobre 2023, l'ensemble du personnel de SARPI s'est recueilli lors d'une minute 
-                            de silence en hommage aux victimes des massacres du 17 octobre 1961 à Paris. Cette 
-                            commémoration annuelle témoigne de notre devoir de mémoire envers ces martyrs de la 
-                            lutte pour l'indépendance de l'Algérie.
+                            Conformément à la décision du Président de la République, M. Abdelmadjid TEBBOUNE 
+                            (Décret présidentiel n° 21-392 du 16 octobre 2021), 
+                            SARPI a observé une Minute de Silence, ce Mardi 17 Octobre à 11H00 au niveau de la Direction Générale,.
                         </p>
 
-                        <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 my-8">
-                            <div className="flex items-start gap-4">
-                                <Icon icon="mdi:candle" className="text-3xl text-gray-600 dark:text-gray-400 flex-shrink-0 mt-1" />
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2 text-MidnightNavyText dark:text-white">
-                                        Un moment de recueillement solennel
-                                    </h4>
-                                    <p className="text-sm text-SlateBlueText dark:text-gray-300">
-                                        L'ensemble des collaborateurs de SARPI, réunis sur tous nos sites, a observé 
-                                        une minute de silence à 11h00 précises, en signe de respect et de reconnaissance 
-                                        envers ces héros de la nation.
-                                    </p>
-                                </div>
-                            </div>
+                       
+                        
+                
+                
+                        <div className="bg-blue-50 dark:bg-blue-800/50 rounded-lg p-6 mt-8">
+                    ses annexes et l’ensemble de ses Directions régionales, qui a été suivie par la levée des
+                     couleurs en recueillement à la mémoire de nos martyrs.
+                      <p className="text-black-700 dark:text-blue-300 font-bold text-xl"> Honneur et Gloire à nos martyrs.</p>
+                      <p className="text-blue-700 dark:text-blue-300 font-bold text-xl"> Vive l’Algérie, Libre et Indépendante !</p>
                         </div>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Le 17 octobre 1961 : un événement tragique
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Le 17 octobre 1961, des milliers d'Algériens ont manifesté pacifiquement à Paris pour 
-                            protester contre le couvre-feu discriminatoire qui leur était imposé. Cette manifestation 
-                            fut violemment réprimée par les forces de l'ordre françaises, causant la mort de nombreux 
-                            manifestants. Cet événement tragique demeure une page sombre de l'histoire de la guerre 
-                            d'indépendance algérienne.
-                        </p>
-
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Le devoir de mémoire
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            SARPI considère que le devoir de mémoire est essentiel pour honorer le sacrifice de ceux 
-                            qui ont lutté pour la liberté et l'indépendance de notre pays. Cette commémoration annuelle 
-                            s'inscrit dans notre engagement citoyen et notre attachement aux valeurs de liberté, 
-                            de justice et de dignité humaine.
-                        </p>
-
-                        <div className="border-l-4 border-green-600 bg-green-50 dark:bg-green-900/20 p-6 my-8">
-                            <h4 className="font-bold text-lg mb-3 text-MidnightNavyText dark:text-white">
-                                Nos valeurs citoyennes
-                            </h4>
-                            <div className="space-y-3">
-                                <div className="flex items-start gap-3">
-                                    <Icon icon="mdi:heart" className="text-xl text-green-600 flex-shrink-0 mt-1" />
-                                    <div>
-                                        <div className="font-semibold text-MidnightNavyText dark:text-white">Respect</div>
-                                        <div className="text-sm text-SlateBlueText dark:text-gray-300">
-                                            Honorer la mémoire de ceux qui ont sacrifié leur vie pour notre liberté
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <Icon icon="mdi:book-open-variant" className="text-xl text-green-600 flex-shrink-0 mt-1" />
-                                    <div>
-                                        <div className="font-semibold text-MidnightNavyText dark:text-white">Transmission</div>
-                                        <div className="text-sm text-SlateBlueText dark:text-gray-300">
-                                            Transmettre l'histoire aux nouvelles générations pour ne jamais oublier
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <Icon icon="mdi:handshake" className="text-xl text-green-600 flex-shrink-0 mt-1" />
-                                    <div>
-                                        <div className="font-semibold text-MidnightNavyText dark:text-white">Solidarité</div>
-                                        <div className="text-sm text-SlateBlueText dark:text-gray-300">
-                                            Maintenir vivante la mémoire collective de notre nation
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
+                            <a
+                                href="/pdfs/03-2024-SARPI-NEWS-Oran-Invest-Expo.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                            >
+                                <Icon icon="mdi:file-pdf-box" className="text-2xl" />
+                                <span>Voir les détails en PDF</span>
+                                <Icon icon="mdi:open-in-new" className="text-lg" />
+                            </a>
                         </div>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Un engagement citoyen
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            En tant qu'entreprise algérienne, SARPI s'engage à perpétuer la mémoire des événements 
-                            qui ont marqué l'histoire de notre pays. Cette commémoration fait partie de notre 
-                            responsabilité sociétale et de notre contribution à l'éducation citoyenne de nos collaborateurs, 
-                            notamment les plus jeunes générations qui n'ont pas vécu ces événements.
-                        </p>
-
-                        <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6 mt-8">
-                            <div className="text-center">
-                                <Icon icon="mdi:star" className="text-4xl text-gray-600 dark:text-gray-400 mx-auto mb-4" />
-                                <p className="text-lg font-semibold text-MidnightNavyText dark:text-white mb-2">
-                                    "Gloire à nos martyrs"
-                                </p>
-                                <p className="text-sm text-SlateBlueText dark:text-gray-300 italic">
-                                    À tous ceux qui ont donné leur vie pour que l'Algérie soit libre et indépendante
-                                </p>
-                            </div>
-                        </div>
-
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3 mt-8">
-                            Reconnaissance nationale
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Le 17 octobre est désormais reconnu comme une date de commémoration nationale en Algérie. 
-                            Cette reconnaissance officielle témoigne de l'importance de cet événement dans l'histoire 
-                            de notre pays et de la nécessité de préserver cette mémoire pour les générations futures.
-                        </p>
-
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            SARPI renouvelle son engagement à participer activement à toutes les commémorations nationales 
-                            et à contribuer au devoir de mémoire qui nous unit tous en tant que citoyens algériens.
-                        </p>
                     </div>
                 </article>
             </div>

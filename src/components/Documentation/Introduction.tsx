@@ -10,7 +10,7 @@ import image6 from "/public/images/documentation/6.jpg"
 import { Icon } from "@iconify/react/dist/iconify.js"
 import { useState } from "react"
 import { DocNavigation } from "./DocNavigation"
-import FPA2023Page from "@/components/Documentation/fpa-2023/page"
+
 export const Introduction = () => {
     const [docNavbarOpen, setDocNavbarOpen] = useState(false)
     
@@ -69,6 +69,7 @@ export const Introduction = () => {
             link: "/documentation/hommage-17-octobre",
             excerpt: "Minute de silence en mémoire des martyrs de la liberté"
         }   
+        
     ]
 
     return (
@@ -142,15 +143,7 @@ export const Introduction = () => {
                     ))}
                 </div>
 
-                <div className="mt-12 text-center">
-                    <Link 
-                        href="/actualites"
-                        className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300"
-                    >
-                        <span>Afficher plus d’actualités</span>
-                        <Icon icon="mdi:arrow-right" className="text-xl" />
-                    </Link>
-                </div>
+                
             </div>
 
             <div
