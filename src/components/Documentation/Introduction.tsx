@@ -1,102 +1,172 @@
 "use client"
 import Image from "next/image"
-import nextImg from "/public/images/documentation/Categories=Nextjs.svg"
-import reactImg from "/public/images/documentation/Categories=React.svg"
-import tailwindImg from "/public/images/documentation/Categories=Tailwind.svg"
-import nextauthImg from "/public/images/documentation/nextauth.png"
-import typescriptImg from "/public/images/documentation/Categories=Typescript.svg"
-import axiosImg from "/public/images/documentation/axios.svg"
+import Link from "next/link"
+import image1 from "/public/images/documentation/1.jpg"
+import image2 from "/public/images/documentation/2.jpg"
+import image3 from "/public/images/documentation/3.jpg"
+import image4 from "/public/images/documentation/4.jpg"
+import image5 from "/public/images/documentation/5.jpg"
+import image6 from "/public/images/documentation/6.jpg"
 import { Icon } from "@iconify/react/dist/iconify.js"
 import { useState } from "react"
 import { DocNavigation } from "./DocNavigation"
-
+import FPA2023Page from "@/components/Documentation/fpa-2023/page"
 export const Introduction = () => {
     const [docNavbarOpen, setDocNavbarOpen] = useState(false)
-    const PackageVersions = [
+    
+    const newsArticles = [
         {
             id: "1",
-            packageName: "NextJs",
-            img: nextImg,
-            version: "15.1.1"
+            title: "Participation de SARPI à la 31ème édition de la Foire de la Production Algérienne",
+            img: image1,
+            date: "Mai 2023",
+            category: "Événement",
+            link: "/documentation/fpa-2023",
+            excerpt: "SARPI présente ses dernières innovations lors de la FPA2023"
         },
         {
             id: "2",
-            packageName: "React",
-            img: reactImg,
-            version: "19.0.0"
+            title: "Signature d'une Convention Globale d'Assurance SARPI-CASH Assurances",
+            img: image2,
+            date: "Juin 2023",
+            category: "Partenariat",
+            link: "/documentation/convention-cash-assurances",
+            excerpt: "Un partenariat stratégique pour renforcer la protection sociale"
         },
         {
             id: "3",
-            packageName: "Tailwindcss",
-            img: tailwindImg,
-            version: "3.4.1"
+            title: "Participation au North Africa Energy & Hydrogen Exhibition and Conference",
+            img: image3,
+            date: "Mars 2023",
+            category: "Conférence",
+            link: "/documentation/napec-2023",
+            excerpt: "SARPI au cœur des enjeux énergétiques de demain"
         },
         {
             id: "4",
-            packageName: "NextAuth",
-            img: nextauthImg,
-            version: "4.24.11"
+            title: "Présence au Salon International de la Sous-Traitance Industrielle",
+            img: image4,
+            date: "Avril 2023",
+            category: "Salon",
+            link: "/documentation/algest-2023",
+            excerpt: "SARPI renforce sa position dans la sous-traitance industrielle"
         },
         {
             id: "5",
-            packageName: "Typescript",
-            img: typescriptImg,
-            version: "5.6.3"
-        }
+            title: "Célébration de la Journée Mondiale de la Sécurité et de la Santé au Travail",
+            img: image5,
+            date: "28 Avril 2023",
+            category: "Engagement RSE",
+            link: "/documentation/journee-securite-sante",
+            excerpt: "SARPI réaffirme son engagement pour la sécurité de ses collaborateurs"
+        },
+        {
+            id: "6",
+            title: "Hommage aux Chouhadas victimes des Massacres du 17 Octobre 1961",
+            img: image6,
+            date: "17 Octobre 2023",
+            category: "Commémoration",
+            link: "/documentation/hommage-17-octobre",
+            excerpt: "Minute de silence en mémoire des martyrs de la liberté"
+        }   
     ]
+
     return (
         <>
             <div id="version" className="md:scroll-m-[180px] scroll-m-28">
-
                 {docNavbarOpen && (
-                    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" onClick={() => setDocNavbarOpen(false)} />
+                    <div 
+                        className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" 
+                        onClick={() => setDocNavbarOpen(false)} 
+                    />
                 )}
 
-                <div className="flex item-center justify-between">
-                    <h3 className=" text-MidnightNavyText text-2xl mt-4 font-semibold mb-6 dark:text-white" >Pacakge Versions</h3>
-                    <button onClick={() => setDocNavbarOpen(true)} className="p-0"> <Icon icon="gg:menu-right" className="text-3xl lg:hidden block" /></button>
+                <div className="flex items-center justify-between mb-8">
+                    <div>
+                        <h3 className="text-MidnightNavyText text-3xl font-bold mb-2 dark:text-white">
+                            Actualités SARPI
+                        </h3>
+                        <p className="text-base text-SlateBlueText dark:text-opacity-80">
+                            Restez informé(e) de nos dernières actualités et événements
+                        </p>
+                    </div>
+                    <button 
+                        onClick={() => setDocNavbarOpen(true)} 
+                        className="p-2 lg:hidden hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+                        aria-label="Ouvrir le menu"
+                    >
+                        <Icon icon="gg:menu-right" className="text-3xl" />
+                    </button>
                 </div>
 
-                <div className="w-full flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-6 rounded-md border border-border dark:border-dark_border">
-                    {
-                        PackageVersions && PackageVersions.map((item) => {
-                            return (
-                                <div key={item.id} className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-border dark:border-dark_border">
-                                    <Image src={item.img} alt="npm-package" className=" mx-auto w-10 h-10 " />
-                                    <h5 className="text-2xl font-bold mt-3.5 text-MidnightNavyText dark:text-white" >{`v${item.version}`}</h5>
-                                    <p className="text-base font-medium text-SlateBlueText dark:text-opacity-80">{item.packageName}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                    {newsArticles.map((article) => (
+                        <Link 
+                            key={article.id}
+                            href={article.link}
+                            className="group block bg-white dark:bg-darkmode border border-border dark:border-dark_border rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                        >
+                            <div className="relative h-48 overflow-hidden">
+                                <Image
+                                    src={article.img}
+                                    alt={article.title}
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                />
+                                <div className="absolute top-4 left-4">
+                                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                                        {article.category}
+                                    </span>
                                 </div>
-                            )
-                        })
-                    }
-                </div>
-                <div className="mt-5">
-                    <p className="text-base font-medium text-SlateBlueText dark:text-opacity-80">Symposium Tailwind NextJs Template is built with Tailwindcss and Nextjs.</p>
-                    <p className="text-base font-medium text-SlateBlueText dark:text-opacity-80">These theme is ready to use and you can totally customize as per your requirement.</p>
-                    <p className="text-base font-medium text-SlateBlueText dark:text-opacity-80">For Customize, You should have knowledge of NextJs, ReactJs, Tailwind and JSX to be able to modify these template.</p>
+                            </div>
+                            
+                            <div className="p-5">
+                                <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                    <Icon icon="mdi:calendar-outline" className="text-lg" />
+                                    <span>{article.date}</span>
+                                </div>
+                                
+                                <h4 className="text-lg font-bold text-MidnightNavyText dark:text-white mb-3 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                    {article.title}
+                                </h4>
+                                
+                                <p className="text-sm text-SlateBlueText dark:text-opacity-80 mb-4 line-clamp-2">
+                                    {article.excerpt}
+                                </p>
+                                
+                                <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold text-sm group-hover:gap-3 transition-all">
+                                    <span>Lire la suite</span>
+                                    <Icon icon="mdi:arrow-right" className="text-lg" />
+                                </div>
+                            </div>
+                        </Link>
+                    ))}
                 </div>
 
+                <div className="mt-12 text-center">
+                    <Link 
+                        href="/actualites"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300"
+                    >
+                        <span>Afficher plus d’actualités</span>
+                        <Icon icon="mdi:arrow-right" className="text-xl" />
+                    </Link>
+                </div>
             </div>
 
             <div
                 className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${docNavbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
             >
-                <div className="flex items-center justify-between p-4">
-                    <h2 className="text-lg font-bold text-midnight_text dark:text-white">Docs Menu</h2>
-                    <button onClick={() => setDocNavbarOpen(false)} aria-label="Close mobile menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="dark:text-white">
-                            <path
-                                fill="none"
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
+                <div className="flex items-center justify-between p-4 border-b border-border dark:border-dark_border">
+                    <h4 className="font-bold text-lg">Navigation</h4>
+                    <button 
+                        onClick={() => setDocNavbarOpen(false)}
+                        className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                        aria-label="Fermer le menu"
+                    >
+                        <Icon icon="mdi:close" className="text-2xl" />
                     </button>
                 </div>
-                <nav className="px-4" >
+                <nav className="px-4">
                     <DocNavigation />
                 </nav>
             </div>

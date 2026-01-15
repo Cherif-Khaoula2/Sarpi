@@ -8,16 +8,18 @@ import { QuickStart } from "./QuickStart"
 export const Documentation = () => {
     return (
         <div className="dark:bg-darkmode" >
+            
             <div className="container p-6 lg:mt-16 mt-16 !pt-10">
+                <Introduction />
                <div className="grid grid-cols-12 gap-6">
                 <div className="lg:col-span-3 col-span-12 lg:block hidden">
-                  <DocNavigation/>
+                 {/*  <DocNavigation/>*/}
                 </div>
                 <div className="lg:col-span-9 col-span-12">
-                <Introduction />
-                <PackageStructure/>
+                
+              {/*   <PackageStructure/>
                 <QuickStart/>
-                <Configuration/>
+                <Configuration/>... */}
                 </div>
                </div>
             </div>
