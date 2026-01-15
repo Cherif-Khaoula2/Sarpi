@@ -9,16 +9,25 @@ export const headerData: HeaderItem[] = [
       { label: "Mot du PDG", href: "/motpdg" },
       { label: "Notre organisation", href: "/QuiSommesNous" },
       { label: "Système HSE", href: "/SystemeHSE" },
-      { label: "Nos valeurs", href: "" },
+      { label: "Nos valeurs", href: "/nosvaleurs" },
     ],
   },
-  { label: "Nos Métiers", href: "/speakers" },
+  {
+    label: "Nos Métiers",
+    href: "",
+    submenu: [
+      { label: "Nos Activités", href: "" },
+      { label: "Nos Secteurs d’Intervention", href: "" },
+      { label: "Nos Ressources", href: "" },
+    ],
+  },
   {
     label: "Nos projets",
     href: "/blog",
     submenu: [
       { label: "Projets Réalisés", href: "/blog" },
       { label: "Projets en Cours de Réalisation", href: "/projet" },
+
     ],
   },
   { label: "Actualités", href: "/documentation" },

@@ -1,108 +1,179 @@
 'use client';
-import React from 'react';
-import Image from 'next/image';
 
-const QHSE = () => {
-  const policies = [
+import React, { useState } from 'react';
+import { FileText, Award, Shield, Leaf, ChevronRight } from 'lucide-react';
+
+interface Policy {
+  id: string;
+  title: string;
+  icon: React.ElementType;
+  color: string;
+  colorDark: string;
+  bgColor: string;
+  borderColor: string;
+  hoverColor: string;
+  iconBg: string;
+  iconColor: string;
+  description: string;
+  points: string[];
+  pdfUrl?: string;
+}
+
+export default function QHSEPolicy() {
+  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
+
+  const policies: Policy[] = [
     {
+      id: 'qualite',
       title: 'Qualité',
-      icon: '/images/qhse/ISO_9001.png', // icône ou logo
-      description: `Améliorer continuellement la Qualité de nos produits et services tout en maintenant sécurité, santé et protection de l'environnement.`,
+      icon: Award,
+      color: 'from-orange-500 to-orange-600',
+      colorDark: 'dark:from-orange-400 dark:to-orange-500',
+      bgColor: 'bg-orange-50 dark:bg-orange-900/20',
+      borderColor: 'border-orange-200 dark:border-orange-800',
+      hoverColor: 'hover:border-orange-400 dark:hover:border-orange-400',
+      iconBg: 'bg-orange-100 dark:bg-orange-900/50',
+      iconColor: 'text-orange-600 dark:text-orange-400',
+      description: 'Système de Management Intégré',
       points: [
-        "Fournir un environnement propice et collaborer avec les parties prenantes.",
-        "Développer notre portefeuille client par de nouveaux marchés en EPC.",
-        "Accroître la satisfaction des clients et parties intéressées.",
-        "Attribuer les responsabilités et autorités pour atteindre les résultats planifiés.",
-        "Renouveler les moyens matériels et équipements.",
-        "Encourager une culture de prévention à tous les niveaux."
+        'Fournir et maintenir l\'environnement nécessaire en tissant des relations avec les Parties Intéressées Pertinentes',
+        'Développer notre portefeuille client par de nouveaux marchés en EPC',
+        'Accroître la satisfaction de nos clients et des autres parties intéressées',
+        'Attribuer les responsabilités et autorités pour des rôles pertinents',
+        'Enrichir et renouveler l\'actif de la société en moyens matériels',
+        'Encourager une culture de prévention à tous les niveaux'
       ],
-      docLink: '/documents/qualite.pdf'
+      pdfUrl: '/pdfs/politique-qualite.pdf'
     },
     {
-      title: 'Santé & Sécurité',
-      icon: '/images/qhse/ISO_45001.png',
-      description: `Garantir un haut niveau de sécurité et de protection pour nos employés, clients et toutes personnes sous notre contrôle.`,
+      id: 'sante-securite',
+      title: 'Santé et Sécurité au Travail',
+      icon: Shield,
+      color: 'from-blue-900 to-blue-950',
+      colorDark: 'dark:from-blue-700 dark:to-blue-800',
+      bgColor: 'bg-blue-50 dark:bg-blue-900/20',
+      borderColor: 'border-blue-200 dark:border-blue-800',
+      hoverColor: 'hover:border-blue-400 dark:hover:border-blue-400',
+      iconBg: 'bg-blue-100 dark:bg-blue-900/50',
+      iconColor: 'text-blue-900 dark:text-blue-400',
+      description: 'Protection de toutes les parties prenantes',
       points: [
-        "Prévenir tout préjudice ou atteinte à la santé et sécurité.",
-        "Respecter les exigences légales et réglementaires.",
-        "Éliminer les dangers et réduire les risques.",
-        "Consulter et faire participer les travailleurs.",
-        "Améliorer continuellement notre Système de Management Intégré."
+        'Prévention de tout préjudice ou atteinte à la santé et à la sécurité',
+        'Satisfaire les exigences légales et réglementaires applicables',
+        'Éliminer les dangers et réduire les risques HSE',
+        'Consulter et faire participer les travailleurs',
+        'Améliorer continuellement notre Système de Management Intégré'
       ],
-      docLink: '/documents/hse.pdf'
+      pdfUrl: '/pdfs/politique-sante-securite.pdf'
     },
     {
+      id: 'environnement',
       title: 'Environnement',
-      icon: '/images/qhse/ISO_14001.png',
-      description: `Engagement à protéger l'environnement, réduire notre empreinte et promouvoir le développement durable.`,
+      icon: Leaf,
+      color: 'from-green-600 to-green-700',
+      colorDark: 'dark:from-green-500 dark:to-green-600',
+      bgColor: 'bg-green-50 dark:bg-green-900/20',
+      borderColor: 'border-green-200 dark:border-green-800',
+      hoverColor: 'hover:border-green-400 dark:hover:border-green-400',
+      iconBg: 'bg-green-100 dark:bg-green-900/50',
+      iconColor: 'text-green-600 dark:text-green-400',
+      description: 'Développement durable et protection environnementale',
       points: [
-        "Prévenir la pollution et protéger l'environnement.",
-        "Réduire notre empreinte environnementale.",
-        "Mettre en place une meilleure gestion des déchets."
+        'Protéger l\'Environnement y compris la prévention de la pollution',
+        'Maîtriser et réduire notre empreinte environnementale',
+        'Mettre en place de nouvelles dispositions pour une meilleure gestion de nos déchets',
+        'Perspective de développement durable'
       ],
-      docLink: '/documents/environnement.pdf'
+      pdfUrl: '/pdfs/politique-environnement.pdf'
     }
   ];
 
-  return (
-    <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 pt-32 pb-20 overflow-hidden">
-      {/* Décorations */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl" />
+  const handleDownloadPDF = (pdfUrl?: string) => {
+    if (pdfUrl) {
+      window.open(pdfUrl, '_blank');
+    }
+  };
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-blue-900 mb-4">Politique QHSE</h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-blue-900 mx-auto" />
+  return (
+    <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 pt-32 pb-20 overflow-hidden dark:from-gray-900 dark:via-gray-800 dark:to-blue-900/20">
+      {/* Décorations */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/5 dark:bg-orange-400/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/5 dark:bg-blue-700/10 rounded-full blur-3xl" />
+
+      <div className="container mx-auto px-6 relative z-10 max-w-7xl">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-5xl font-bold text-blue-900 dark:text-orange-400 mb-4">
+            Politique QHSE
+          </h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 mx-auto rounded mb-6" />
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Qualité, Santé, Sécurité et Environnement - Notre engagement pour l&apos;excellence
+          </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {policies.map((policy, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-3xl shadow-2xl p-8 border-l-8 border-orange-500 transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
-            >
-              {/* Icône */}
-              <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center">
-                <Image
-                  src={policy.icon}
-                  alt={policy.title}
-                  width={64}
-                  height={64}
-                  className="object-contain"
-                />
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {policies.map((policy) => {
+            const Icon = policy.icon;
+            return (
+              <div
+                key={policy.id}
+                className={`bg-white dark:bg-gray-800 rounded-2xl shadow-lg border-2 transition-all duration-300 ${policy.borderColor} ${policy.hoverColor} ${
+                  hoveredCard === policy.id ? 'transform -translate-y-2 shadow-2xl' : ''
+                }`}
+                onMouseEnter={() => setHoveredCard(policy.id)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                {/* Card Header with Gradient */}
+                <div className={`bg-gradient-to-r ${policy.color} ${policy.colorDark} p-6 rounded-t-2xl`}>
+                  <div className={`${policy.iconBg} w-16 h-16 rounded-xl flex items-center justify-center mb-4`}>
+                    <Icon className={`w-8 h-8 ${policy.iconColor}`} />
+                  </div>
+                  <h2 className="text-2xl font-bold text-white mb-2">{policy.title}</h2>
+                  <p className="text-white/90 text-sm">{policy.description}</p>
+                </div>
+
+                {/* Card Content */}
+                <div className="p-6">
+                  <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide">
+                    Nos Engagements
+                  </h3>
+                  <ul className="space-y-3 mb-6">
+                    {policy.points.map((point, index) => (
+                      <li key={index} className="flex items-start text-sm text-gray-600 dark:text-gray-400">
+                        <ChevronRight className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0 text-gray-400 dark:text-gray-500" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Download Button */}
+                  <button
+                    onClick={() => handleDownloadPDF(policy.pdfUrl)}
+                    className={`w-full bg-gradient-to-r ${policy.color} ${policy.colorDark} text-white py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-lg transition-all duration-300 transform hover:scale-105`}
+                  >
+                    <FileText className="w-5 h-5" />
+                    <span>Ouvrir le PDF</span>
+                  </button>
+                </div>
               </div>
+            );
+          })}
+        </div>
 
-              {/* Titre */}
-              <h3 className="text-2xl font-bold text-blue-900 mb-4 text-center">{policy.title}</h3>
-
-              {/* Description */}
-              <p className="text-gray-700 mb-4 text-center">{policy.description}</p>
-
-              {/* Points */}
-              <ul className="list-disc list-inside space-y-2 mb-6 text-gray-600">
-                {policy.points.map((point, idx) => (
-                  <li key={idx}>{point}</li>
-                ))}
-              </ul>
-
-              {/* Bouton */}
-              <div className="text-center">
-                <a
-                  href={policy.docLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-gradient-to-r from-orange-500 to-blue-900 text-white font-semibold rounded-xl shadow-lg hover:from-orange-600 hover:to-blue-800 transition-all duration-300"
-                >
-                  Consulter le document
-                </a>
-              </div>
-            </div>
-          ))}
+        {/* Footer */}
+        <div className="mt-16 text-center">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-100 dark:border-gray-700">
+            <h3 className="text-2xl font-bold text-blue-900 dark:text-orange-300 mb-4">
+              SARPI - Excellence et Engagement
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Dans le cadre de la mise en place du Système de Management Intégré, SARPI s&apos;engage à améliorer continuellement la Qualité de ses produits et services, tout en maintenant un niveau élevé de sécurité au travail, de santé et de protection de l&apos;environnement.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default QHSE;
+}
