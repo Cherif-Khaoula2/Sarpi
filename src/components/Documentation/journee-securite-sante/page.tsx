@@ -6,7 +6,8 @@ import { Icon } from "@iconify/react/dist/iconify.js"
 
 export default function SecuriteSantePage() {
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-darkmode">
+        <div className="min-h-screen bg-gray-50 dark:bg-darkmode pt-[72px] md:pt-[96px]">
+
             <div className="relative h-96 w-full">
                 <Image
                     src={image5}
@@ -16,10 +17,10 @@ export default function SecuriteSantePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                     <div className="max-w-4xl mx-auto">
-                        <span className="bg-red-600 px-4 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+                       <span className="bg-blue-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 inline-block shadow-lg">
                             Engagement RSE
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-white">
                             Célébration de la Journée Mondiale de la Sécurité et de la Santé au Travail
                         </h1>
                         <div className="flex items-center gap-4 text-sm">
@@ -33,13 +34,7 @@ export default function SecuriteSantePage() {
             </div>
 
             <div className="max-w-4xl mx-auto px-4 py-12">
-                <Link 
-                    href="/actualites"
-                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-8 font-semibold"
-                >
-                    <Icon icon="mdi:arrow-left" className="text-xl" />
-                    <span>Retour aux actualités</span>
-                </Link>
+              
 
                 <article className="bg-white dark:bg-darkmode rounded-lg shadow-lg p-8">
                     <div className="prose dark:prose-invert max-w-none">
