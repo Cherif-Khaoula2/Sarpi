@@ -1,76 +1,160 @@
 "use client"
 import Image from "next/image"
-import Link from "next/link"
-import image5 from "/public/images/documentation/5.jpg"
 import { Icon } from "@iconify/react/dist/iconify.js"
 
 export default function SecuriteSantePage() {
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-darkmode pt-[72px] md:pt-[96px]">
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-orange-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900/20 pt-[72px] md:pt-[96px]">
+            {/* Décorations d'arrière-plan */}
+            <div className="fixed top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-orange-500/10 to-blue-900/10 dark:from-orange-400/15 dark:to-blue-700/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="fixed bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-blue-900/10 to-orange-500/10 dark:from-blue-700/15 dark:to-orange-400/15 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="relative h-96 w-full">
-                <Image
-                    src={image5}
-                    alt="Journée Sécurité et Santé"
-                    className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <div className="max-w-4xl mx-auto">
-                       <span className="bg-blue-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 inline-block shadow-lg">
-                            Engagement RSE
-                        </span>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-white">
-                            Célébration de la Journée Mondiale de la Sécurité et de la Santé au Travail
-                        </h1>
-                        <div className="flex items-center gap-4 text-sm">
-                            <div className="flex items-center gap-2">
-                                <Icon icon="mdi:calendar-outline" className="text-xl" />
-                                <span> Avril 2023</span>
-                            </div>
-                             <div className="flex items-center gap-2">
-                                <Icon icon="mdi:map-marker" className="text-xl" />
-                                <span>Oran, Algerie </span>
-                            </div>
+            {/* Hero Section */}
+            <div className="max-w-5xl mx-auto px-4 md:px-6 py-8 relative z-10">
+                {/* Badge et Titre */}
+                <div className="mb-6">
+                    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 px-6 py-2 rounded-full text-sm font-bold mb-4 shadow-xl text-white">
+                        <Icon icon="mdi:shield-check" className="text-xl" />
+                        <span>Engagement RSE</span>
+                    </div>
+                    
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-blue-900 dark:text-orange-400">
+                        Célébration de la Journée Mondiale de la Sécurité et de la Santé au Travail
+                    </h1>
+                    
+                    <div className="flex flex-wrap items-center gap-4 text-base">
+                        <div className="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2 rounded-xl shadow-lg border-2 border-orange-200/50 dark:border-orange-800/30">
+                            <Icon icon="mdi:calendar-outline" className="text-xl text-orange-500" />
+                            <span className="font-semibold text-gray-700 dark:text-gray-300">23-28 Avril 2024</span>
                         </div>
+                        <div className="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2 rounded-xl shadow-lg border-2 border-blue-200/50 dark:border-blue-800/30">
+                            <Icon icon="mdi:map-marker" className="text-xl text-blue-900 dark:text-blue-400" />
+                            <span className="font-semibold text-gray-700 dark:text-gray-300">Tous les sites SARPI, Algérie</span>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Image Slider Style */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-orange-200/50 dark:border-orange-800/30 mb-8">
+                    <div className="relative h-[400px] md:h-[500px]">
+                        <Image
+                            src="/images/documentation/5.jpg"
+                            alt="Journée Mondiale de la Sécurité et de la Santé au Travail"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                     </div>
                 </div>
             </div>
 
-            <div className="max-w-4xl mx-auto px-4 py-12">
-              
-
-                <article className="bg-white dark:bg-darkmode rounded-lg shadow-lg p-8">
-                    <div className="prose dark:prose-invert max-w-none">
-                        <h2 className="text-2xl font-bold text-MidnightNavyText dark:text-white mb-4">
-                            SARPI réaffirme son engagement pour la sécurité de ses collaborateurs
-                        </h2>
+            {/* Contenu Principal */}
+            <div className="max-w-5xl mx-auto px-4 md:px-6 pb-16 relative z-10">
+                <article className="bg-gradient-to-br from-white to-orange-50/50 dark:from-gray-800 dark:to-blue-900/20 rounded-3xl shadow-2xl border-2 border-orange-200/50 dark:border-orange-800/30 overflow-hidden">
+                    {/* Header de l'article */}
+                    <div className="bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 p-8 relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16" />
+                        <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full -ml-12 -mb-12" />
                         
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            SARPI a célébré la Journée Mondiale de la Sécurité et de la Santé au Travail, qui s’est déroulée du 
-                            23 au 28 avril 2024 au niveau de la Direction Générale, ainsi qu’au niveau de l’ensemble de ses sites. 
-                        </p>
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center">
+                                    <Icon icon="mdi:heart-pulse" className="text-2xl text-white" />
+                                </div>
+                                <h2 className="text-3xl font-bold text-white">
+                                    SARPI réaffirme son engagement pour la sécurité de ses collaborateurs
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
 
+                    {/* Contenu de l'article */}
+                    <div className="p-8 md:p-12">
+                        <div className="prose dark:prose-invert max-w-none">
+                            <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+                                SARPI a célébré la <strong className="text-blue-900 dark:text-orange-300">Journée Mondiale de la Sécurité et de la Santé au Travail</strong>, 
+                                qui s'est déroulée du 23 au 28 avril 2024 au niveau de la Direction Générale, ainsi qu'au niveau de 
+                                l'ensemble de ses sites à travers l'Algérie.
+                            </p>
 
-                        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8">
-                           Placée sous le thème « Impacts du Changement Climatique sur la Sécurité et la Santé au Travail »,
-                            cet événement a été rehaussé par un programme riche proposant une multitude d'activités visant à sensibiliser 
-                           ses travailleurs mais aussi à les impliquer davantage aux sujets relatifs à la Sécurité et la Santé au Travail.
+                            {/* Carte d'information */}
+                            <div className="bg-gradient-to-br from-blue-50 to-orange-50/50 dark:from-blue-900/20 dark:to-orange-900/10 border-l-4 border-gradient-to-b from-orange-500 to-blue-900 rounded-2xl p-8 my-8 shadow-lg relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-500/10 to-blue-900/10 rounded-full -mr-16 -mt-16 blur-xl" />
+                                
+                                <div className="relative z-10">
+                                    <div className="flex items-start gap-4 mb-4">
+                                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 flex items-center justify-center flex-shrink-0 shadow-lg">
+                                            <Icon icon="mdi:thermometer" className="text-2xl text-white" />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-blue-900 dark:text-orange-300">
+                                            Thème 2024 : Impacts du Changement Climatique
+                                        </h3>
+                                    </div>
+                                    
+                                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                        Placée sous le thème <strong className="text-blue-900 dark:text-orange-300">« Impacts du Changement Climatique sur la Sécurité 
+                                        et la Santé au Travail »</strong>, cet événement a été rehaussé par un programme riche proposant une 
+                                        multitude d'activités visant à sensibiliser ses travailleurs mais aussi à les impliquer davantage 
+                                        aux sujets relatifs à la Sécurité et la Santé au Travail.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Points clés */}
+                            <div className="grid md:grid-cols-3 gap-6 my-10">
+                                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border-2 border-orange-200/50 dark:border-orange-800/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 dark:from-orange-400 dark:to-orange-500 flex items-center justify-center mb-4 shadow-lg">
+                                        <Icon icon="mdi:account-multiple" className="text-3xl text-white" />
+                                    </div>
+                                    <h4 className="text-lg font-bold text-blue-900 dark:text-orange-300 mb-2">
+                                        Sensibilisation
+                                    </h4>
+                                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                                        Programme complet pour tous les collaborateurs
+                                    </p>
+                                </div>
+
+                                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border-2 border-blue-200/50 dark:border-blue-800/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-900 to-blue-800 dark:from-blue-700 dark:to-blue-600 flex items-center justify-center mb-4 shadow-lg">
+                                        <Icon icon="mdi:map-marker-multiple" className="text-3xl text-white" />
+                                    </div>
+                                    <h4 className="text-lg font-bold text-blue-900 dark:text-orange-300 mb-2">
+                                        Tous les sites
+                                    </h4>
+                                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                                        Événement organisé sur l'ensemble des sites
+                                    </p>
+                                </div>
+
+                                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border-2 border-orange-200/50 dark:border-orange-800/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-600 to-blue-900 dark:from-orange-500 dark:to-blue-700 flex items-center justify-center mb-4 shadow-lg">
+                                        <Icon icon="mdi:earth" className="text-3xl text-white" />
+                                    </div>
+                                    <h4 className="text-lg font-bold text-blue-900 dark:text-orange-300 mb-2">
+                                        Climat & SST
+                                    </h4>
+                                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                                        Focus sur les impacts climatiques au travail
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
-                  <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
+                        {/* Bouton PDF */}
+                        <div className="mt-10 pt-8 border-t-2 border-orange-200/50 dark:border-orange-800/30 flex justify-center">
                             <a
                                 href="/pdfs/03-2024-SARPI-NEWS-Oran-Invest-Expo.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                                className="group inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 hover:from-blue-900 hover:to-orange-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden"
                             >
-                                <Icon icon="mdi:file-pdf-box" className="text-2xl" />
-                                <span>Voir les détails en PDF</span>
-                                <Icon icon="mdi:open-in-new" className="text-lg" />
+                                <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                                <Icon icon="mdi:file-pdf-box" className="text-3xl relative z-10" />
+                                <span className="text-lg relative z-10">Télécharger les détails en PDF</span>
+                                <Icon icon="mdi:download" className="text-xl relative z-10 group-hover:animate-bounce" />
                             </a>
                         </div>
-
                     </div>
                 </article>
             </div>
