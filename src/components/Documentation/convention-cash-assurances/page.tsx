@@ -26,7 +26,11 @@ export default function ConventionCashPage() {
                         <div className="flex items-center gap-4 text-sm">
                             <div className="flex items-center gap-2">
                                 <Icon icon="mdi:calendar-outline" className="text-xl" />
-                                <span>Juin 2023</span>
+                                <span>Novembre 2023</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Icon icon="mdi:map-marker" className="text-xl" />
+                                <span> Alger ,Algerie</span>
                             </div>
                         </div>
                     </div>
@@ -42,59 +46,46 @@ export default function ConventionCashPage() {
                         </h2>
                         
                         <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            SARPI a signé une convention globale d'assurance avec CASH Assurances, marquant un tournant 
-                            important dans notre engagement envers la protection et le bien-être de nos collaborateurs.
-                        </p>
+                            Le Président Directeur Général M. Tarik NOUIZI et la Présidente Directrice Générale de la
+                             CASH Assurances Mme Wided BELHOUCHET, ont procédé, le dimanche 19 novembre 2023, à la signature
+                              d’une convention globale d’assurance. La CASH Assurances apportera une assistance à SARPI dans
+                               la gestion et expertise des risques et dommages, les risques industriels divers et la formation 
+                               des cadres chargés de la gestion de contrat d’assurance. Ladite convention a pour objet de définir
+                                les conditions techniques et administratives ainsi que les modalités de souscription des polices
+                                 d’assurance lors de la réalisation des projets et couvre plusieurs activités importantes liés 
+                                 </p>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Les objectifs de cette convention
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Cette convention vise à offrir une couverture d'assurance complète et adaptée aux besoins 
-                            de nos employés et de leurs familles. Elle s'inscrit dans notre politique de responsabilité 
-                            sociale d'entreprise et notre volonté de garantir un environnement de travail sécurisé.
-                        </p>
+                       
 
-                        <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8">
+                        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8">
                             <h4 className="font-bold text-lg mb-2 text-MidnightNavyText dark:text-white">
-                                Couvertures incluses
+                                à nos projets, notamment :
                             </h4>
                             <ul className="list-disc list-inside space-y-2 text-SlateBlueText dark:text-gray-300">
-                                <li>Assurance maladie complémentaire</li>
-                                <li>Assurance accidents du travail</li>
-                                <li>Assurance vie et invalidité</li>
-                                <li>Protection juridique</li>
-                                <li>Assistance médicale 24h/24</li>
+                                <li>Assurance des risques de chantier et/ou tout risque montage.</li>
+                                <li>Assurance responsabilité civile du réalisateur d’ouvrage</li>
+                                <li>La signature de cette convention rentre dans le renforcement du partenariat intra-groupe.SONATRACH.</li>
+                                
                             </ul>
                         </div>
+                         <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                                <a 
+                                    href="/pdfs/09-SARPI-NEWS-Cash-Assurance.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                                >
+                                    <Icon icon="mdi:file-pdf-box" className="text-2xl" />
+                                    <span>Voir les détails en PDF</span>
+                                    <Icon icon="mdi:open-in-new" className="text-lg" />
+                                </a>
+                            </div>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Un partenaire de confiance
-                        </h3>
                         
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            CASH Assurances, acteur majeur du secteur des assurances en Algérie, apporte son expertise 
-                            et son professionnalisme pour accompagner SARPI dans la mise en œuvre de cette couverture globale.
-                        </p>
-
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Avantages pour nos collaborateurs
-                        </h3>
                         
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Cette convention permet à nos collaborateurs de bénéficier d'une protection étendue, 
-                            de procédures simplifiées et d'un service de qualité. Elle témoigne de notre engagement 
-                            continu envers le bien-être de nos équipes et renforce la confiance mutuelle au sein de l'entreprise.
-                        </p>
 
-                        <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 mt-8">
-                            <p className="text-sm text-SlateBlueText dark:text-gray-300 italic">
-                                "Cette convention représente une étape importante dans notre stratégie de développement 
-                                des ressources humaines et confirme notre volonté d'offrir à nos collaborateurs 
-                                les meilleures conditions de travail et de protection sociale."
-                            </p>
-                        </div>
+                        
+
                     </div>
                 </article>
             </div>

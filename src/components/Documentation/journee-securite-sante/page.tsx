@@ -26,7 +26,11 @@ export default function SecuriteSantePage() {
                         <div className="flex items-center gap-4 text-sm">
                             <div className="flex items-center gap-2">
                                 <Icon icon="mdi:calendar-outline" className="text-xl" />
-                                <span>28 Avril 2023</span>
+                                <span> Avril 2023</span>
+                            </div>
+                             <div className="flex items-center gap-2">
+                                <Icon icon="mdi:map-marker" className="text-xl" />
+                                <span>Oran, Algerie </span>
                             </div>
                         </div>
                     </div>
@@ -43,137 +47,30 @@ export default function SecuriteSantePage() {
                         </h2>
                         
                         <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            À l'occasion de la Journée Mondiale de la Sécurité et de la Santé au Travail, célébrée chaque 
-                            année le 28 avril, SARPI a organisé une série d'activités de sensibilisation et de formation 
-                            pour renforcer la culture de la sécurité au sein de l'entreprise.
+                            SARPI a célébré la Journée Mondiale de la Sécurité et de la Santé au Travail, qui s’est déroulée du 
+                            23 au 28 avril 2024 au niveau de la Direction Générale, ainsi qu’au niveau de l’ensemble de ses sites. 
                         </p>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Une journée dédiée à la prévention
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Cette journée spéciale a été l'occasion de rappeler l'importance de la prévention des risques 
-                            professionnels et de promouvoir un environnement de travail sûr et sain pour tous nos collaborateurs. 
-                            Plusieurs activités ont été organisées sur l'ensemble de nos sites.
-                        </p>
 
-                        <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-600 p-6 my-8">
-                            <h4 className="font-bold text-lg mb-2 text-MidnightNavyText dark:text-white">
-                                Programme de la journée
-                            </h4>
-                            <ul className="list-disc list-inside space-y-2 text-SlateBlueText dark:text-gray-300">
-                                <li>Sessions de sensibilisation aux risques professionnels</li>
-                                <li>Formations pratiques sur les gestes de premiers secours</li>
-                                <li>Exercices d'évacuation et de gestion des urgences</li>
-                                <li>Ateliers sur l'utilisation des équipements de protection</li>
-                                <li>Distribution de guides de sécurité</li>
-                                <li>Évaluation des postes de travail</li>
-                            </ul>
+                        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8">
+                           Placée sous le thème « Impacts du Changement Climatique sur la Sécurité et la Santé au Travail »,
+                            cet événement a été rehaussé par un programme riche proposant une multitude d'activités visant à sensibiliser 
+                           ses travailleurs mais aussi à les impliquer davantage aux sujets relatifs à la Sécurité et la Santé au Travail.
                         </div>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Notre politique de sécurité
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            La sécurité et la santé au travail constituent une priorité absolue pour SARPI. 
-                            Notre politique de sécurité repose sur plusieurs piliers fondamentaux qui guident 
-                            toutes nos actions et décisions.
-                        </p>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-6">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <div className="bg-blue-600 rounded-full p-3">
-                                        <Icon icon="mdi:shield-check" className="text-2xl text-white" />
-                                    </div>
-                                    <h4 className="font-bold text-lg text-MidnightNavyText dark:text-white">Prévention</h4>
-                                </div>
-                                <p className="text-sm text-SlateBlueText dark:text-gray-300">
-                                    Identification et évaluation des risques, mise en place de mesures préventives adaptées
-                                </p>
-                            </div>
-
-                            <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-6">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <div className="bg-green-600 rounded-full p-3">
-                                        <Icon icon="mdi:school" className="text-2xl text-white" />
-                                    </div>
-                                    <h4 className="font-bold text-lg text-MidnightNavyText dark:text-white">Formation</h4>
-                                </div>
-                                <p className="text-sm text-SlateBlueText dark:text-gray-300">
-                                    Formation continue de nos équipes aux bonnes pratiques de sécurité
-                                </p>
-                            </div>
-
-                            <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-6">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <div className="bg-orange-600 rounded-full p-3">
-                                        <Icon icon="mdi:clipboard-check" className="text-2xl text-white" />
-                                    </div>
-                                    <h4 className="font-bold text-lg text-MidnightNavyText dark:text-white">Contrôle</h4>
-                                </div>
-                                <p className="text-sm text-SlateBlueText dark:text-gray-300">
-                                    Audits réguliers et inspections pour garantir le respect des normes
-                                </p>
-                            </div>
-
-                            <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg p-6">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <div className="bg-purple-600 rounded-full p-3">
-                                        <Icon icon="mdi:chart-line" className="text-2xl text-white" />
-                                    </div>
-                                    <h4 className="font-bold text-lg text-MidnightNavyText dark:text-white">Amélioration</h4>
-                                </div>
-                                <p className="text-sm text-SlateBlueText dark:text-gray-300">
-                                    Amélioration continue de nos pratiques et de nos équipements
-                                </p>
-                            </div>
+                  <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
+                            <a
+                                href="/pdfs/03-2024-SARPI-NEWS-Oran-Invest-Expo.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                            >
+                                <Icon icon="mdi:file-pdf-box" className="text-2xl" />
+                                <span>Voir les détails en PDF</span>
+                                <Icon icon="mdi:open-in-new" className="text-lg" />
+                            </a>
                         </div>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Résultats et engagement
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Grâce à notre politique proactive en matière de sécurité, SARPI maintient un excellent 
-                            bilan en termes de prévention des accidents du travail. Cette performance est le fruit 
-                            de l'engagement de tous nos collaborateurs et de notre investissement continu dans 
-                            la sécurité et la santé au travail.
-                        </p>
-
-                        <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 mt-8">
-                            <div className="flex items-start gap-4">
-                                <Icon icon="mdi:information" className="text-3xl text-blue-600 flex-shrink-0" />
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2 text-MidnightNavyText dark:text-white">
-                                        Zéro accident, notre objectif
-                                    </h4>
-                                    <p className="text-sm text-SlateBlueText dark:text-gray-300">
-                                        SARPI s'engage à maintenir un environnement de travail où chaque collaborateur 
-                                        peut exercer son activité en toute sécurité. Notre objectif "zéro accident" 
-                                        guide toutes nos actions et investissements en matière de santé et sécurité au travail.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3 mt-8">
-                            Témoignages
-                        </h3>
-                        
-                        <div className="space-y-4">
-                            <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6 border-l-4 border-blue-600">
-                                <p className="text-SlateBlueText dark:text-gray-300 italic mb-3">
-                                    "Cette journée nous a permis de revoir et d'améliorer nos pratiques quotidiennes. 
-                                    Les formations dispensées étaient très instructives et pratiques."
-                                </p>
-                                <p className="text-sm font-semibold text-MidnightNavyText dark:text-white">
-                                    - Un technicien SARPI
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </article>
             </div>

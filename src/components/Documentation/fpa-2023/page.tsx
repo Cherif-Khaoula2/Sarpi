@@ -81,10 +81,8 @@ export default function FPA2023Page() {
                                 base de la croissance et du développement économique ».
                             </p>
 
-                            <h3 className="text-xl md:text-2xl font-bold mt-8 mb-4">
-                                Une plateforme d'excellence pour l'industrie nationale
-                            </h3>
-                            
+                    
+                            <aside className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 rounded-r-lg p-6 my-8">
                             <p className="leading-relaxed mb-6">
                                 Cette édition a regroupé plusieurs secteurs d'activité notamment l'industrie 
                                 chimique et pétrochimique, les industries mécaniques, la sidérurgie, la métallurgie, 
@@ -92,7 +90,7 @@ export default function FPA2023Page() {
                                 pour le réseautage professionnel et la mise en relation d'affaires entre les opérateurs 
                                 économiques nationaux.
                             </p>
-
+                           </aside>
                             {/* PDF Button */}
                             <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
                                 <a 
@@ -110,83 +108,6 @@ export default function FPA2023Page() {
                     </div>
                 </article>
 
-                {/* Related Articles Section - Version Professionnelle */}
-                <section className="mt-12 md:mt-16" aria-labelledby="related-title">
-                    <div className="flex items-center justify-between mb-8">
-                        <h3 id="related-title" className="text-2xl md:text-3xl font-bold text-MidnightNavyText dark:text-white">
-                            Actualités similaires
-                        </h3>
-                        <Link 
-                            href="/documentation"
-                            className="hidden md:flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
-                        >
-                            <span>Voir toutes les actualités</span>
-                            <Icon icon="mdi:arrow-right" className="text-xl" />
-                        </Link>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {relatedArticles.map((article) => (
-                            <Link 
-                                key={article.id}
-                                href={article.slug}
-                                className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400"
-                            >
-                                <div className="p-6">
-                                    {/* Category Badge */}
-                                    <div className="flex items-center gap-2 mb-3">
-                                        <Icon 
-                                            icon={article.icon} 
-                                            className="text-2xl text-blue-600 dark:text-blue-400" 
-                                        />
-                                        <span className="text-sm text-blue-600 dark:text-blue-400 font-semibold uppercase tracking-wide">
-                                            {article.category}
-                                        </span>
-                                    </div>
-
-                                    {/* Title */}
-                                    <h4 className="text-lg md:text-xl font-bold text-MidnightNavyText dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-3 line-clamp-2">
-                                        {article.title}
-                                    </h4>
-
-                                    {/* Excerpt */}
-                                    <p className="text-sm text-SlateBlueText dark:text-gray-400 mb-4 line-clamp-2">
-                                        {article.excerpt}
-                                    </p>
-
-                                    {/* Footer */}
-                                    <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
-                                        <time className="text-xs text-gray-500 dark:text-gray-400" dateTime={article.date}>
-                                            {new Date(article.date).toLocaleDateString('fr-FR', { 
-                                                month: 'long', 
-                                                year: 'numeric' 
-                                            })}
-                                        </time>
-                                        <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium">
-                                            <span className="text-sm">Lire plus</span>
-                                            <Icon 
-                                                icon="mdi:arrow-right" 
-                                                className="text-lg transition-transform group-hover:translate-x-1" 
-                                                aria-hidden="true"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-
-                    {/* Mobile "View All" Link */}
-                    <div className="md:hidden mt-6 text-center">
-                        <Link 
-                            href="/documentation"
-                            className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
-                        >
-                            <span>Voir toutes les actualités</span>
-                            <Icon icon="mdi:arrow-right" className="text-xl" />
-                        </Link>
-                    </div>
-                </section>
             </main>
         </div>
     )

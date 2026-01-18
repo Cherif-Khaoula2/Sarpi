@@ -31,7 +31,7 @@ export default function ALGEST2023Page() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <Icon icon="mdi:map-marker" className="text-xl" />
-                                <span>Alger, Algérie</span>
+                                <span>SAFEX, Alger</span>
                             </div>
                         </div>
                     </div>
@@ -47,109 +47,42 @@ export default function ALGEST2023Page() {
                         </h2>
                         
                         <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Le Salon International de la Sous-Traitance Industrielle (ALGEST) a constitué une plateforme 
-                            exceptionnelle pour SARPI de mettre en avant son expertise en matière de sous-traitance 
-                            et de services industriels. Notre participation a été marquée par un intérêt soutenu 
-                            des visiteurs et des professionnels du secteur.
-                        </p>
+                            SARPI a participé à la 8ème édition du Salon International de la Sous-Traitance Industrielle (ALGEST2023),
+                             du 16 au 19 Octobre au Palais des Expositions , Safex - Pavillon U. Le coup d’envoi de cette 8ème édition 
+                             a été donné par le Directeur Général de la Promotion de l’Investissement au Ministère de l’Industrie et de
+                              la Production Pharmaceutique, M. Salah BOUSBIA ainsi que le Président du Conseil du Renouveau Economique 
+                              Algérien (CREA), M. Kamel MOULA.
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Notre offre de sous-traitance
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            SARPI propose une gamme complète de services de sous-traitance industrielle, adaptés 
-                            aux besoins spécifiques de chaque client. Notre expertise couvre plusieurs domaines 
-                            stratégiques de l'industrie algérienne.
                         </p>
+                        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8">
+                                           Le programme de cette exposition a été rehaussé par des conférences économiques
+                                            traitants diverses thématiques notamment : « Politique industrielle et Sous-traitance 
+                                            en Algérie : Une vision stratégique », « Economie circulaire et développement durable 
+                                            en Algérie » ainsi que des sessions de questions-réponses sur les thèmes présentés. 
+                                            Cette manifestation fut une occasion de rencontre pour les opérateurs économiques et
+                                             ceux intéressés par la sous-traitance, les producteurs et les donneurs d’ordres, pour
+                                              établir un partenariat fructueux susceptible de développer le tissu de la 
+                                              sous-traitance en Algérie .
 
-                        <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-600 p-6 my-8">
-                            <h4 className="font-bold text-lg mb-2 text-MidnightNavyText dark:text-white">
-                                Nos services de sous-traitance
-                            </h4>
-                            <ul className="list-disc list-inside space-y-2 text-SlateBlueText dark:text-gray-300">
-                                <li>Usinage et fabrication mécanique</li>
-                                <li>Montage et assemblage industriel</li>
-                                <li>Maintenance préventive et curative</li>
-                                <li>Contrôle qualité et certification</li>
-                                <li>Logistique et gestion de stock</li>
-                                <li>Ingénierie et études techniques</li>
-                            </ul>
+                           
+                           
                         </div>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Un secteur en pleine croissance
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            La sous-traitance industrielle connaît un développement important en Algérie, portée 
-                            par la volonté de renforcer le tissu industriel national et de favoriser l'intégration locale. 
-                            SARPI s'inscrit pleinement dans cette dynamique en offrant des solutions compétitives et de qualité.
-                        </p>
-
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Partenariats et collaborations
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Le salon a été l'occasion de renforcer nos partenariats existants et d'en établir de nouveaux 
-                            avec des entreprises nationales et internationales. Ces collaborations nous permettent 
-                            d'élargir notre offre et d'améliorer continuellement la qualité de nos prestations.
-                        </p>
-
-                        <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-8">
-                            <h4 className="font-bold text-lg mb-3 text-MidnightNavyText dark:text-white">
-                                Nos atouts compétitifs
-                            </h4>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="flex items-start gap-3">
-                                    <Icon icon="mdi:check-circle" className="text-2xl text-green-600 flex-shrink-0 mt-1" />
-                                    <div>
-                                        <div className="font-semibold text-MidnightNavyText dark:text-white">Équipements modernes</div>
-                                        <div className="text-sm text-SlateBlueText dark:text-gray-300">
-                                            Parc machine de dernière génération
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <Icon icon="mdi:check-circle" className="text-2xl text-green-600 flex-shrink-0 mt-1" />
-                                    <div>
-                                        <div className="font-semibold text-MidnightNavyText dark:text-white">Personnel qualifié</div>
-                                        <div className="text-sm text-SlateBlueText dark:text-gray-300">
-                                            Équipes formées et expérimentées
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <Icon icon="mdi:check-circle" className="text-2xl text-green-600 flex-shrink-0 mt-1" />
-                                    <div>
-                                        <div className="font-semibold text-MidnightNavyText dark:text-white">Certifications</div>
-                                        <div className="text-sm text-SlateBlueText dark:text-gray-300">
-                                            Standards internationaux de qualité
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <Icon icon="mdi:check-circle" className="text-2xl text-green-600 flex-shrink-0 mt-1" />
-                                    <div>
-                                        <div className="font-semibold text-MidnightNavyText dark:text-white">Réactivité</div>
-                                        <div className="text-sm text-SlateBlueText dark:text-gray-300">
-                                            Délais courts et flexibilité
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
+                            <a
+                                href="/pdfs/07-SARPI-NEWS-ALGEST_compressed.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                            >
+                                <Icon icon="mdi:file-pdf-box" className="text-2xl" />
+                                <span>Voir les détails en PDF</span>
+                                <Icon icon="mdi:open-in-new" className="text-lg" />
+                            </a>
                         </div>
 
-                        <h3 className="text-xl font-bold text-MidnightNavyText dark:text-white mb-3">
-                            Perspectives d'avenir
-                        </h3>
-                        
-                        <p className="text-SlateBlueText dark:text-gray-300 mb-6">
-                            Fort de cette participation réussie, SARPI poursuit son développement dans le secteur 
-                            de la sous-traitance industrielle. Nous continuons à investir dans nos capacités de production 
-                            et dans la formation de nos équipes pour répondre aux exigences croissantes du marché.
-                        </p>
+                       
+
                     </div>
                 </article>
             </div>
