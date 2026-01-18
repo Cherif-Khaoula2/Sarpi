@@ -62,27 +62,27 @@ const QuiSommesNous = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 rounded" />
           </div>
 
-        {/* Onglets */}
+         {/* Onglets */}
         
-    <div className="flex justify-center mb-12">
-  <div className="w-full max-w-8xl bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-2 flex gap-2">
-    {sections.map((section) => (
-      <button
-        key={section.id}
-        onClick={() => setActiveTab(section.id)}
-        className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-medium transition-all duration-300 ${
-          activeTab === section.id
-            ? 'bg-gradient-to-r from-orange-500 to-blue-900 text-white shadow-lg dark:from-orange-400 dark:to-blue-700'
-            : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
-        }`}
-      >
-        {section.icon}
-        <span>{section.title}</span>
-      </button>
-    ))}
-  </div>
-</div>
-
+         <div className="flex justify-center mb-12">
+           <div className="w-full max-w-8xl bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-2 flex gap-2">
+             {sections.map((section) => (
+               <button
+                 key={section.id}
+                 onClick={() => setActiveTab(section.id)}
+                 className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-medium transition-all duration-300 ${
+                   activeTab === section.id
+                     ? 'bg-gradient-to-r from-orange-500 to-blue-900 text-white shadow-lg dark:from-orange-400 dark:to-blue-700'
+                     : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
+                 }`}
+               >
+                 {section.icon}
+                 <span>{section.title}</span>
+               </button>
+             ))}
+           </div>
+         </div>
+         
 
         {/* Contenu - Présentation */}
         {activeTab === 'presentation' && (

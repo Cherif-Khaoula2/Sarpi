@@ -16,16 +16,16 @@ const ProjetList: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
 
-        {/* Titre */}
-        <div className="max-w-7xl mx-auto mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-orange-400 mb-3">
-           Projets   <span className="text-orange-500 dark:text-orange-300">en Cours de Réalisation</span>
-          </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 rounded" />
-          <p className="mt-4 max-w-2xl text-gray-600 dark:text-gray-300">
+        
+        <div className="text-left mb-12">
+            <h2 className="text-4xl font-bold text-blue-900 dark:text-orange-400 mb-2">
+              Projets en <span className="text-orange-500 dark:text-orange-300">Cours de Réalisation</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 rounded" />
+            <p className="mt-4 max-w-2xl text-gray-600 dark:text-gray-300">
             Découvrez nos dernières  projets en cours de réalisation.
           </p>
-        </div>
+          </div>
 
         {/* Grille blog */}
         <div className="grid grid-cols-12 gap-7">

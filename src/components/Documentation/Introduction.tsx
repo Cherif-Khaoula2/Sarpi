@@ -81,18 +81,16 @@ export const Introduction = () => {
                         onClick={() => setDocNavbarOpen(false)} 
                     />
                 )}
-
-              
-                <div className="max-w-7xl mx-auto mb-16">
-                     <h1 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-orange-400 mb-3">
-                      Actualités  <span className="text-orange-500 dark:text-orange-300">SARPI</span>
-                     </h1>
-                     <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 rounded" />
-                     <p className="mt-4 max-w-2xl text-gray-600 dark:text-gray-300">
-                       Découvrez nos dernières actualités et événements.
-                     </p>
+               <div className="text-left mb-12">
+                  <h2 className="text-4xl font-bold text-blue-900 dark:text-orange-400 mb-2">
+                    Actualités  <span className="text-orange-500 dark:text-orange-300">SARPI</span>
+                  </h2>
+                  <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 rounded" />
+                           <p className="mt-4 max-w-2xl text-gray-600 dark:text-gray-300">
+                  Restez informé(e) de nos dernières actualités et événements
+                </p>
                 </div>
-
+               
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                       {newsArticles.map((article) => (
                         <div
@@ -112,11 +110,7 @@ export const Introduction = () => {
                                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                                 />
                                 <div className="absolute top-4 left-4">
-                                  <span className="  bg-gradient-to-r from-orange-500 to-orange-600
-                                    hover:from-orange-600 hover:to-orange-700
-                                    dark:from-orange-400 dark:to-orange-500
-                                    dark:hover:from-orange-500 dark:hover:to-orange-600
-                                    text-white px-3 py-1 rounded-full text-xs font-semibold">
+                                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
                                     {article.category}
                                   </span>
                                 </div>
