@@ -109,7 +109,7 @@ export default function QHSEPolicy() {
           </h2>
          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-blue-900 dark:from-orange-400 dark:to-blue-700 rounded mb-6" />
 
-          <p className="text-lg max-w-3xl text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-lg  text-gray-700 dark:text-gray-300 leading-relaxed">
             Qualité, Santé, Sécurité et Environnement - Notre engagement pour l&apos;excellence et la durabilité dans tous nos projets industriels.
           </p>
         </div>
