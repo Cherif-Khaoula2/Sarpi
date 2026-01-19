@@ -7,22 +7,15 @@ import TicketSection from "@/components/Home/TicketSection";
 import Testimonial from "@/components/SharedComponent/Testimonial";
 import Testimonials from "@/components/Home/Testimonials";
 import { Metadata } from "next";
-
 export const metadata: Metadata = {
-  title: "Schedules | Sarpi",
+  title: "Schedules | Symposium",
 };
 
-const Page = async () => {
+const page = () => {
   const breadcrumbLinks = [
     { href: "/", text: "Home" },
     { href: "/schedules", text: "Schedules" },
   ];
-
-  // Tester la récupération des services
-  let error = null;
-  
-
-
   return (
     <>
       <HeroSub
@@ -30,21 +23,9 @@ const Page = async () => {
         description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive."
         breadcrumbLinks={breadcrumbLinks}
       />
-      
-      {/* Section de test - à retirer après */}
-      {error && (
-        <div className="container py-4">
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-            Erreur: {error}
-          </div>
-        </div>
-      )}
-      
- 
-      
       <section className="dark:bg-darkmode">  
         <div className="container upcoming">
-          {/*  <BoxSlider/>*/}
+          <BoxSlider/>
           <Schedules/>        
         </div>
       </section>      
@@ -56,4 +37,4 @@ const Page = async () => {
   );
 };
 
-export default Page;
+export default page;
