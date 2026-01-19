@@ -9,7 +9,7 @@ import Upcoming from '@/components/Home/Upcoming';
 import Testimonials from '@/components/Home/Testimonials';
 import TicketSection from '@/components/Home/TicketSection';
 export const metadata: Metadata = {
-  title: "SARPI - Accueil",
+  title: "Accueil - SARPI",
   icons: "/favicon.ico",
 };
 

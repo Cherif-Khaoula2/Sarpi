@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Hero from "@/components/Home/Hero";
 import SecteursIntervention from "@/components/Home/secteurs";
 export const metadata: Metadata = {
-  title: "SARPI - Nos Secteurs d’Intervention",
+  title: "Nos Secteurs d’Intervention - SARPI",
 };
 
 const page = () => {

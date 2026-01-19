@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Hero from "@/components/Home/Hero";
 import SystemeHSE from "@/components/Home/SystemeHSE";
 export const metadata: Metadata = {
-  title: "SARPI - Système HSE",
+  title: "Système HSE - SARPI",
 };
 
 const page = () => {

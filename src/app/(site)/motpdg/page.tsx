@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Hero from "@/components/Home/Hero";
 import MessagePDG from "@/components/Home/MessagePDG";
 export const metadata: Metadata = {
-  title: "SARPI - Mot du PDG",
+  title: "Mot du PDG - SARPI",
 };
 
 const page = () => {

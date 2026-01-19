@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Hero from "@/components/Home/Hero";
 import Nosvaleurs from "@/components/Home/nosvaleurs";
 export const metadata: Metadata = {
-  title: "SARPI - Nos valeurs",
+  title: "Nos valeurs - SARPI",
 };
 
 const page = () => {
