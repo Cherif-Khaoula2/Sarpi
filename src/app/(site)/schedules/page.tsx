@@ -7,19 +7,15 @@ import TicketSection from "@/components/Home/TicketSection";
 import Testimonial from "@/components/SharedComponent/Testimonial";
 import Testimonials from "@/components/Home/Testimonials";
 import { Metadata } from "next";
-import { getServices } from "@/services/api";
-
 export const metadata: Metadata = {
-  title: "Schedules | Sarpi",
+  title: "Schedules | Symposium",
 };
 
-const Page = async () => {
+const page = () => {
   const breadcrumbLinks = [
     { href: "/", text: "Home" },
     { href: "/schedules", text: "Schedules" },
   ];
-
-
   return (
     <>
       <HeroSub
@@ -27,10 +23,9 @@ const Page = async () => {
         description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive."
         breadcrumbLinks={breadcrumbLinks}
       />
-      
       <section className="dark:bg-darkmode">  
         <div className="container upcoming">
-          {/*  <BoxSlider/>*/}
+          <BoxSlider/>
           <Schedules/>        
         </div>
       </section>      
@@ -42,4 +37,4 @@ const Page = async () => {
   );
 };
 
-export default Page;
+export default page;
