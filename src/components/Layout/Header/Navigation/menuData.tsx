@@ -36,7 +36,7 @@ export const headerData: HeaderItem[] = [
     href: "",
     submenu: [
       { label: "Dépôt d'Offres de Services", href: "/depot-offres" },
-      { label: "Carrière​", href: "/recrutement" },
+      { label: "Carrière​", href: "/carriere" },
     ],
   },
   { label: "Contact", href: "/contact" },
