@@ -51,46 +51,46 @@ const BoxSlider = () => {
     <>
       <Slider {...settings} className="text-center">
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/sonatrach.png" alt="Sonatrach" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/sonatrach.png" alt="Sonatrach" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/pvep.png" alt="pvep" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/pvep.png" alt="pvep" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/pttep.png" alt="pttep" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/pttep.png" alt="pttep" />
         </div>    
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/petrofac.png" alt="petrofac" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/petrofac.png" alt="petrofac" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-           <img className="mx-auto mb-2 mt-3" src="images/client/inamenas.png" alt="inamenas" />
+           <img className="mx-auto mb-2 mt-3" src="/images/client/inamenas.png" alt="inamenas" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/equinor.png" alt="equinor" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/equinor.png" alt="equinor" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/aec.png" alt="aec" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/aec.png" alt="aec" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">      
-          <img className="mx-auto mb-2 mt-3" src="images/client/statoil.png" alt="statoil" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/statoil.png" alt="statoil" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/sanahess.png" alt="sanahess" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/sanahess.png" alt="sanahess" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/jgc.png" alt="jgc" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/jgc.png" alt="jgc" />
          </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/inamenas.png" alt="inamenas" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/inamenas.png" alt="inamenas" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/bp.png" alt="bp" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/bp.png" alt="bp" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">
-          <img className="mx-auto mb-2 mt-3" src="images/client/anadarka.png" alt="anadarka" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/anadarka.png" alt="anadarka" />
         </div>
         <div className="bg-transparent pt-5 pb-7 rounded-lg text-center group hover:bg-blue-500">  
-          <img className="mx-auto mb-2 mt-3" src="images/client/abener.png" alt="abener" />
+          <img className="mx-auto mb-2 mt-3" src="/images/client/abener.png" alt="abener" />
         </div>
       </Slider>
     </>
