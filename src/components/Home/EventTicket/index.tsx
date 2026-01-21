@@ -19,7 +19,12 @@ const EventTicket = () => {
                     </div>
 
                     <div className="flex flex-wrap items-stretch" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <div className="bg-primary flex items-center justify-center lg:px-16 px-8 lg:py-0 py-8 lg:rounded-l-22 rounded-t-22 md:rounded-tr-none md:rounded-bl-22 rounded-bl-none md:w-2/4 w-full">
+<div className="bg-gradient-to-br from-blue-900 to-blue-800
+                flex items-center justify-center
+                lg:px-16 px-8 lg:py-0 py-8
+                lg:rounded-l-22 rounded-t-22
+                md:rounded-tr-none md:rounded-bl-22
+                rounded-bl-none md:w-2/4 w-full">
                             <Image
                                 src="/images/event-ticket/SARPI SPA.png"
                                 alt="ticket"
@@ -30,7 +35,11 @@ const EventTicket = () => {
                                 sizes="100vh"
                             />
                         </div>
-                        <div className="bg-ElectricAqua lg:py-14 py-6 lg:px-16 px-8 lg:rounded-r-22 rounded-b-22 md:rounded-bl-none md:rounded-tr-22 rounded-tr-none md:md:w-2/4 w-full">
+<div className="bg-gradient-to-br from-blue-800 to-blue-700
+                lg:py-14 py-6 lg:px-16 px-8
+                lg:rounded-r-22 rounded-b-22
+                md:rounded-bl-none md:rounded-tr-22
+                rounded-tr-none md:w-2/4 w-full">
                             <div className="bg-white dark:bg-darklight rounded-22 lg:px-11 px-4 pt-8 pb-10">
                                 <h6 className="text-[26px] leading-[2.1rem] font-bold text-secondary dark:text-white pb-5">
                                     ISO Certification

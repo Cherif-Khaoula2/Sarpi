@@ -16,14 +16,15 @@ dark:from-orange-900/20 dark:via-gray-800 dark:to-blue-900 overflow-hidden min-h
         <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-12 lg:gap-16">
           {/* Left Content */}
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/30 rounded-full border border-blue-200 dark:border-blue-800">
-              <span className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Filiale 100% SONATRACH</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-900/10 dark:bg-blue-900/40 border-blue-800  rounded-full border dark:border-blue-800">
+              <span className="w-2 h-2 bg-blue-800 dark:bg-blue-400 rounded-full animate-pulse" />
+              <span className="text-sm font-medium text-blue-900 dark:text-blue-200">Filiale 100% SONATRACH</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
               Présentation{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-900 to-blue-700
+dark:from-blue-800 dark:to-blue-600 bg-clip-text text-transparent">
                 SARPI
               </span>
             </h1>
@@ -34,12 +35,12 @@ dark:from-orange-900/20 dark:via-gray-800 dark:to-blue-900 overflow-hidden min-h
 
             <div className="flex items-center gap-6 pt-4">
               <div className="flex flex-col">
-                <span className="text-4xl font-bold text-blue-600 dark:text-blue-400">30+</span>
+                <span className="text-4xl font-bold text-blue-900 dark:text-blue-300">30+</span>
                 <span className="text-sm text-gray-600 dark:text-gray-400">Ans d'expérience</span>
               </div>
               <div className="w-px h-12 bg-gray-300 dark:bg-gray-600" />
               <div className="flex flex-col">
-                <span className="text-4xl font-bold text-cyan-600 dark:text-cyan-400">100%</span>
+                <span className="text-4xl font-bold text-blue-900 dark:text-blue-300">100%</span>
                 <span className="text-sm text-gray-600 dark:text-gray-400">SONATRACH</span>
               </div>
             </div>
